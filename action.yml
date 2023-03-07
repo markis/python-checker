@@ -1,0 +1,12 @@
+name: 'Python Checker'
+description: 'Python checker for running mypy, black, ruff, etc.'
+inputs:
+  cmd:
+    description: 'Command to run, (eg. black --config $github_workspace/pyproject.toml)'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://markis/python-checker:main'
+  args:
+    - ${{ inputs.cmd }}
+

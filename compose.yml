@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  python-checker:
+    image: markis/python-checker:latest
+    container_name: python-checker
+    build:
+      context: .
+      dockerfile: Containerfile
+    entrypoint: ["sleep", "infinity"]

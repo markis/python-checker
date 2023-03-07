@@ -1,0 +1,15 @@
+[project]
+name = "python-checker"
+version = "0.0.1"
+description = "Container for python development tools"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "Markis Taylor", email = "m@rkis.net"}]
+
+dependencies = [
+  "black==22.3.0",
+  "invoke==2.0.0",
+  "mypy==1.0.1",
+  "ruff==0.0.254",
+]
